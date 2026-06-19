@@ -96,7 +96,7 @@ These control charts were applied to detect abnormal variations and evaluate whe
 
 | Control Chart | Statistic / Center Line | UCL | LCL | Notes |
 |---|---|---|---|---|
-| X-bar chart | $\bar{\bar{X}} = \frac{\sum_{i=1}^{m} n_i \bar{X}_i}{\sum_{i=1}^{m} n_i}$ | $UCL_i = \bar{\bar{X}} + A_3(n_i)\bar{s}$ | $LCL_i = \bar{\bar{X}} - A_3(n_i)\bar{s}$ | |
+| X-bar chart | $\bar{\bar{X}}$ = $\frac{\sum_{i=1}^{m} n_i \bar{X}_i}{\sum_{i=1}^{m} n_i}$ | $UCL_i = \bar{\bar{X}} + A_3(n_i)\bar{s}$ | $LCL_i = \bar{\bar{X}} - A_3(n_i)\bar{s}$ | |
 | S chart | $\bar{s} = \sqrt{\frac{\sum_{i=1}^{m}(n_i-1)s_i^2}{\sum_{i=1}^{m} n_i - m}}$ | $UCL_i = B_4(n_i)\bar{s}$ | $LCL_i = B_3(n_i)\bar{s}$ |  |
 | CUSUM chart | $C_i^+ = \max(0, C_{i-1}^+ + Z_i - k)$ | Signal if $C_i^+ > H$ | Not used for one-sided upper CUSUM | Standardized data were used. In this study, $k = 1$ and $H = 10$. |
 | EWMA chart | $E_i = \lambda Z_i + (1-\lambda)E_{i-1}$, $CL = 0$ | $UCL_i = L\sqrt{\frac{\lambda}{2-\lambda}\left[1-(1-\lambda)^{2i}\right]}$ | $LCL_i = -L\sqrt{\frac{\lambda}{2-\lambda}\left[1-(1-\lambda)^{2i}\right]}$ | Standardized data were used. In this study, $\lambda = 0.1$. |
