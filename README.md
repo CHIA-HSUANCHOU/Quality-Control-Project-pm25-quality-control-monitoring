@@ -20,6 +20,7 @@ The seven basic quality control tools were applied to analyze PM2.5 patterns in 
 - Fishbone diagram
 - Scatter plot
 - Pareto chart
+
 (detailed in 品管報告.pdf)
 
 | Time Period | Number of PM2.5 Exceedance Events | Percentage (%) |
