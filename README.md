@@ -42,7 +42,7 @@ The seven basic quality control tools were applied to analyze PM2.5 patterns in 
 |---|---|---|
 | X-bar chart | Monitors whether the daily afternoon PM2.5 average concentration shows abnormal changes. | Abnormal upward shifts in afternoon PM2.5 average concentration were observed on several days, including 1/4–1/9 and 1/11–1/19. |
 | S chart | Monitors whether the variability of daily afternoon PM2.5 concentration is abnormal. | The variability of afternoon PM2.5 concentration remained relatively stable. |
-| CUSUM chart | Monitors whether the PM2.5 average concentration shows small and persistent shifts. | Afternoon PM2.5 showed a continuous upward shift during 1/6–1/10 and 1/11–1/14. |
+| CUSUM chart | Monitors whether the PM2.5 average concentration shows small and persistent shifts. | PM2.5 showed a continuous upward shift during 1/6–1/10 and 1/11–1/14. |
 | EWMA chart | Uses exponentially weighted moving averages to detect abnormal trends in the smoothed PM2.5 average. | PM2.5 showed a persistent upward trend during 1/6–1/10 and 1/11–1/20. |
 
 
