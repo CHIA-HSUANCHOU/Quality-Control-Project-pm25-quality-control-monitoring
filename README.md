@@ -92,13 +92,26 @@ The p chart was used to monitor the proportion of PM2.5 exceedance events.
 
 These control charts were applied to detect abnormal variations and evaluate whether the PM2.5 process was under statistical control.
 
+#### Control Limit Formulas
 
-### 3. Additional ARL0 Estimation
+| Control Chart | Statistic / Center Line | UCL | LCL | Notes |
+|---|---|---|---|---|
+| X-bar chart | $\bar{\bar{X}} = \frac{\sum_{i=1}^{m} n_i \bar{X}_i}{\sum_{i=1}^{m} n_i}$ | $UCL_i = \bar{\bar{X}} + A_3(n_i)\bar{s}$ | $LCL_i = \bar{\bar{X}} - A_3(n_i)\bar{s}$ | |
+| S chart | $\bar{s} = \sqrt{\frac{\sum_{i=1}^{m}(n_i-1)s_i^2}{\sum_{i=1}^{m} n_i - m}}$ | $UCL_i = B_4(n_i)\bar{s}$ | $LCL_i = B_3(n_i)\bar{s}$ |  |
+| CUSUM chart | $C_i^+ = \max(0, C_{i-1}^+ + Z_i - k)$ | Signal if $C_i^+ > H$ | Not used for one-sided upper CUSUM | Standardized data were used. In this study, $k = 1$ and $H = 10$. |
+| EWMA chart | $E_i = \lambda Z_i + (1-\lambda)E_{i-1}$, $CL = 0$ | $UCL_i = L\sqrt{\frac{\lambda}{2-\lambda}\left[1-(1-\lambda)^{2i}\right]}$ | $LCL_i = -L\sqrt{\frac{\lambda}{2-\lambda}\left[1-(1-\lambda)^{2i}\right]}$ | Standardized data were used. In this study, $\lambda = 0.1$. |
+| p chart | $CL = \bar{p}$ | $UCL_i = \bar{p} + 3\sqrt{\frac{\bar{p}(1-\bar{p})}{n_i}}$ | $LCL_i = \bar{p} - 3\sqrt{\frac{\bar{p}(1-\bar{p})}{n_i}}$ | Used to monitor the proportion of PM2.5 exceedance events. |
 
-As an additional analysis, the in-control Average Run Length, ARL0, was estimated for the following control charts:
+
+
+
+
+### HW: Additional ARL0 Simulation Study
+
+As an additional homework extension, the in-control Average Run Length, ARL0, was estimated through simulation for the following control charts:
 
 - X-bar chart
 - R chart
 - S chart
 
-The ARL0 estimation was used to evaluate the expected number of samples before a false alarm occurs when the process is actually in control.
+In this simulation study, samples were generated from the standard normal distribution, N(0, 1), to represent an in-control process. The ARL0 estimation was used to evaluate the expected number of samples before a false alarm occurs when the process is actually in control.
